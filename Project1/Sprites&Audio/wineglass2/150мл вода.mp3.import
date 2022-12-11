@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/150мл вода.mp3-bf541ba1e7b394c0b1a0840ec9b0e433.mp3str"
+
+[deps]
+
+source_file="res://Sprites&Audio/wineglass2/150мл вода.mp3"
+dest_files=[ "res://.import/150мл вода.mp3-bf541ba1e7b394c0b1a0840ec9b0e433.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

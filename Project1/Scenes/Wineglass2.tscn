@@ -1,0 +1,77 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Sprites&Audio/wineglass2/бокал с ряженкой 50.png" type="Texture" id=1]
+[ext_resource path="res://Sprites&Audio/wineglass2/бокал с ряженкой 50_1.png" type="Texture" id=2]
+[ext_resource path="res://Sprites&Audio/wineglass2/бокал с ряженкой 100.png" type="Texture" id=3]
+[ext_resource path="res://Sprites&Audio/wineglass2/бокал с ряженкой 100_1.png" type="Texture" id=4]
+[ext_resource path="res://Sprites&Audio/wineglass2/150мл вода.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Sprites&Audio/wineglass2/бокал для шампанского 100.png" type="Texture" id=6]
+[ext_resource path="res://Sprites&Audio/wineglass2/50мл вода.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Sprites&Audio/wineglass2/50мл ряженка.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Sprites&Audio/wineglass2/бокал для шампанского 50.png" type="Texture" id=9]
+[ext_resource path="res://Sprites&Audio/wineglass2/150мл ряженка.mp3" type="AudioStream" id=10]
+[ext_resource path="res://Sprites&Audio/wineglass2/бокал для шампанского 100_1.png" type="Texture" id=11]
+[ext_resource path="res://Sprites&Audio/wineglass2/бокал для шампанского 50_1.png" type="Texture" id=12]
+[ext_resource path="res://Scripts/winglass2/Wineglass2.gd" type="Script" id=13]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 13.5, 33 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "milk100",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "milk50",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "water100",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "water50",
+"speed": 5.0
+} ]
+
+[node name="Wineglass2" type="Node2D"]
+position = Vector2( 148, 90 )
+script = ExtResource( 13 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 1.5, 9 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+animation = "milk100"
+
+[node name="water50" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+
+[node name="water100" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="milk50" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[node name="milk100" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = -11.0
+margin_top = 65.0
+margin_right = 11.0
+margin_bottom = 85.0
+
+[connection signal="input_event" from="Area2D" to="." method="_on_Area2D_input_event"]
+[connection signal="text_changed" from="TextEdit" to="." method="_on_TextEdit_text_changed"]

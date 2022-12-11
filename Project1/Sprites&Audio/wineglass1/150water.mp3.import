@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/150water.mp3-641b6cafcbf9ea8c846091a5cbc27d0f.mp3str"
+
+[deps]
+
+source_file="res://Sprites&Audio/wineglass1/150water.mp3"
+dest_files=[ "res://.import/150water.mp3-641b6cafcbf9ea8c846091a5cbc27d0f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

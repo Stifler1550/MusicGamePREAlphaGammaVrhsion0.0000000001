@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/50мл вода.mp3-34bd516a017f63ec9424bd645352f805.mp3str"
+
+[deps]
+
+source_file="res://Sprites&Audio/wineglass2/50мл вода.mp3"
+dest_files=[ "res://.import/50мл вода.mp3-34bd516a017f63ec9424bd645352f805.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

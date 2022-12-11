@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/50мл ряженка.mp3-d9dfa24fb0295c5b4e87a186dade91a4.mp3str"
+
+[deps]
+
+source_file="res://Sprites&Audio/wineglass2/50мл ряженка.mp3"
+dest_files=[ "res://.import/50мл ряженка.mp3-d9dfa24fb0295c5b4e87a186dade91a4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/300honey.mp3-d80fee69a3086498e980e9d31becd478.mp3str"
+
+[deps]
+
+source_file="res://Sprites&Audio/wineglass1/300honey.mp3"
+dest_files=[ "res://.import/300honey.mp3-d80fee69a3086498e980e9d31becd478.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
